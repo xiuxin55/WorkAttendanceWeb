@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+#windownbg {
+	POSITION: absolute; WIDTH: 100%; DISPLAY: none; BACKGROUND: #000; HEIGHT: 100%; TOP: 0px; LEFT: 0px;
+}
+#windown-box {
+	BORDER: #137FAC 9px solid; POSITION: fixed; TEXT-ALIGN: left;BACKGROUND: #fff;
+}
+#windown-title {
+	 POSITION: relative; HEIGHT: 30px; OVERFLOW: hidden; background:#137FAC; color:#fff;
+}
+#windown-title H2 {	POSITION: relative; COLOR: #666; FONT-SIZE: 14px; TOP: 5px; LEFT: 10px; color:#fff;
+}
+#windown-close {
+	POSITION: absolute; TEXT-INDENT: -10em; WIDTH: 31px; HEIGHT: 24px;  TOP: 3px; CURSOR: pointer; RIGHT: 5px; text-align:right; background:url(../images/close.jpg) no-repeat;
+}
+#windown-content-border {
+	BORDER-BOTTOM: #a6c9e1 1px solid; POSITION: relative; BORDER-LEFT: #a6c9e1 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; BACKGROUND: url(../jquery/images/bg.png) repeat-x 0px -380px; BORDER-TOP: #a6c9e1 1px solid; TOP: -1px; BORDER-RIGHT: #a6c9e1 1px solid; PADDING-TOP: 5px;
+}
+#windown-content {
+	POSITION: relative; TEXT-ALIGN: center; OVERFLOW: auto
+}
+#windown-content IMG {
+	DISPLAY: block
+}
+#windown-content IFRAME {
+	DISPLAY: block
+}
+#windown-content .loading {
+	POSITION: absolute; MARGIN-TOP: -8px; MARGIN-LEFT: -8px; TOP: 50%; LEFT: 50%
+}
+BLOCKQUOTE {
+	BORDER-BOTTOM: #f8b3d0 2px dashed; BORDER-LEFT: #f8b3d0 2px dashed; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #fff5fa; MARGIN: 10px 0px; PADDING-LEFT: 10px; WIDTH: 500px; PADDING-RIGHT: 10px; BORDER-TOP: #f8b3d0 2px dashed; BORDER-RIGHT: #f8b3d0 2px dashed; PADDING-TOP: 10px;
+}

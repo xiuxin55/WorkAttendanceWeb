@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>With jQuery</title>
+		<style>
+			form {
+				margin: 0;
+			}
+			textarea {
+				display: block;
+			}
+		</style>
+		<script charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script charset="utf-8" src="../kindeditor-min.js"></script>
+		<script charset="utf-8" src="../lang/zh_CN.js"></script>
+		<script>
+			$(function() {
+				var editor = KindEditor.create('textarea[name="content"]');
+			});
+		</script>
+	</head>
+	<body>
+		<h3>使用jQuery</h3>
+		<form>
+			<textarea name="content" style="width:800px;height:200px;"></textarea>
+		</form>
+	<!-- ymdnz.cn Baidu tongji analytics -->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F96a84c19b7d8357447e3bb6b2f125a98' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>

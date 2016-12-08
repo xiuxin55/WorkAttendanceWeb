@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Upload Button Examples</title>
+		<link rel="stylesheet" href="../themes/default/default.css" />
+		<script src="../kindeditor-min.js"></script>
+		<script>
+			KindEditor.ready(function(K) {
+				var uploadbutton = K.uploadbutton({
+					button : K('#uploadButton')[0],
+					fieldName : 'imgFile',
+					url : '../php/upload_json.php?dir=file',
+					afterUpload : function(data) {
+						if (data.error === 0) {
+							var url = K.formatUrl(data.url, 'absolute');
+							K('#url').val(url);
+						} else {
+							alert(data.message);
+						}
+					},
+					afterError : function(str) {
+						alert('自定义错误信息: ' + str);
+					}
+				});
+				uploadbutton.fileBox.change(function(e) {
+					uploadbutton.submit();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<input type="text" id="url" value="" readonly="readonly" /> <input type="button" id="uploadButton" value="Upload" />
+	<!-- ymdnz.cn Baidu tongji analytics -->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F96a84c19b7d8357447e3bb6b2f125a98' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>
