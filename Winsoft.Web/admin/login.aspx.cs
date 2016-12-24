@@ -5,7 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Winsoft.Common;
-
+using Winsoft.BLL;
+using Winsoft.Model;
 
 namespace Winsoft.Web.admin
 {
